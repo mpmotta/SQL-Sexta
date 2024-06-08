@@ -83,8 +83,8 @@ FROM
         SELECT 
             nome
         FROM 
-            cidades
+            municipio 
         WHERE 
-            estado = 'SP'
+            uf = 'SP'
     ) AS subconsulta
-GROUP BY cidade;
+GROUP BY nome;
